@@ -8,3 +8,7 @@ sudo apt-get install atom
 
 # atom configuration
 apm install atom-beautify
+
+
+# tilda
+sudo apt install tilda
