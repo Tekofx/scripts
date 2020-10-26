@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Install zsh
-sudo apt install zsh
-
 # Install Meslo Font
 wget https://github.com/romkatv/powerlevel10k-media/raw/master/MesloLGS%20NF%20Regular.ttf ~/.local/share/fonts
 
