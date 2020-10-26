@@ -8,8 +8,12 @@ else
 fi
 
 # Install powerlevel10k
-git clone https://github.com/romkatv/powerlevel10k.git ~/bin/powerlevel10k
-echo 'source ~/bin/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
+if [ -f '~/bin/powerlevel10k' ]; then
+   echo 'The powerlevel10k repo already exists'
+else
+   git clone https://github.com/romkatv/powerlevel10k.git ~/bin/powerlevel10k
+   echo 'source ~/bin/powerlevel10k/powerlevel10k.zsh-theme' >> ~/.zshrc
+fi
 
 # Configure powerlevel10k
 source ~/.zshrc
