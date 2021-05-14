@@ -42,13 +42,13 @@ chsh -s `which fish`
 echo
 echo "Clean apt"
 echo 
-sudo apt autoremove
+sudo apt autoremove -y
 
 echo
-echo "########## Rebooting system ##########"
+echo "########## Rebooting system in 15 s ##########"
 echo "After reboot run configure_programs"
-sudo ( sleep 5 ; reboot ) & 
-
+sleep 5 
+( sleep 5 ; reboot ) & 
 
 echo
 echo "Install fish plugins"
