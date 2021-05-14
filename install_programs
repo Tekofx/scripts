@@ -10,7 +10,7 @@ git clone https://github.com/junegunn/fzf.git ~/repos/
 echo
 echo "Install fish, neovim, ncdu, htop, tree, neofetch, git, curl, openssh-server, openssh-client, python3"
 echo
-sudo apt install fish neovim ncdu htop tree neofetch git curl openssh-server openssh-client phyton3.6 -y
+sudo apt install fish neovim ncdu htop tree neofetch git curl openssh-server openssh-client phyton3 -y
 
 echo
 echo "Install bat, gotop"
@@ -26,12 +26,12 @@ bash <(curl -sL https://raw.githubusercontent.com/denisidoro/navi/master/scripts
 echo 
 echo "install npm and nodejs"
 echo
-sudo apt install nodejs npm
+sudo apt install nodejs npm -y
 
 echo
 echo "install speedtest"
 echo
-npm install --global speed-test
+sudo npm install --global speed-test
 
 echo
 echo "Make fish default"
@@ -42,6 +42,11 @@ echo
 echo "Install fish plugins"
 echo 
 curl -L https://get.oh-my.fish | fish &
+
+echo
+echo "Clean apt"
+echo 
+sudo apt autoremove
 
 echo
 echo "########## Rebooting system ##########"
