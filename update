@@ -1,0 +1,20 @@
+#!/bin/bash
+echo "Update apt packages"
+echo 
+sudo apt update && sudo apt upgrade -y
+
+echo
+echo "Update npm"
+echo 
+sudo npm update -g
+
+echo
+echo "Update snap"
+echo 
+sudo snap refresh
+
+echo
+echo "Update navi"
+echo 
+navi repo add https://github.com/Tekofx/navi-cheats.git
+

@@ -1,0 +1,3 @@
+#!/bin/bash
+# Restart a systemd service
+sudo systemctl restart $1.service
