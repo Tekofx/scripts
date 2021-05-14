@@ -1,0 +1,51 @@
+#!/bin/bash
+#Install useful terminal programs
+
+echo "fzf installation"
+echo
+mkdir ~/repos/
+git clone https://github.com/junegunn/fzf.git ~/repos/
+~/repos/fzf/install
+
+echo
+echo "Install fish, neovim, ncdu, htop, tree, neofetch, git, curl, openssh-server, openssh-client, python3"
+echo
+sudo apt install fish neovim ncdu htop tree neofetch git curl openssh-server openssh-client phyton3.6 -y
+
+echo
+echo "Install bat, gotop"
+echo 
+sudo snap install batcat gotop-brlin
+
+echo 
+echo "install navi"
+echo
+bash <(curl -sL https://raw.githubusercontent.com/denisidoro/navi/master/scripts/install)
+
+
+echo 
+echo "install npm and nodejs"
+echo
+sudo apt install nodejs npm
+
+echo
+echo "install speedtest"
+echo
+npm install --global speed-test
+
+echo
+echo "Make fish default"
+echo
+chsh -s `which fish`
+
+echo
+echo "Install fish plugins"
+echo 
+curl -L https://get.oh-my.fish | fish &
+
+echo
+echo "########## Rebooting system ##########"
+echo "After reboot run configure_programs"
+sleep 5s
+reboot
+
