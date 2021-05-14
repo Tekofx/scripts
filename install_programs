@@ -10,7 +10,7 @@ git clone https://github.com/junegunn/fzf.git ~/repos/
 echo
 echo "Install fish, neovim, ncdu, htop, tree, neofetch, git, curl, openssh-server, openssh-client, python3"
 echo
-sudo apt install fish neovim ncdu htop tree neofetch git curl openssh-server openssh-client phyton3 -y
+sudo apt install fish neovim ncdu htop tree neofetch git curl openssh-server openssh-client python3 -y
 
 echo
 echo "Install bat, gotop"
