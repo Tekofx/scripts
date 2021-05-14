@@ -1,0 +1,13 @@
+#!/bin/bash
+
+# Configure fish
+git clone https://github.com/Tekofx/dotfiles.git ~/repos/
+cp ~/repos/dotfiles/.config/fish/config.fish ~/.config/fish/
+omf install https://github.com/wfxr/forgit
+omf install z
+omf install weather
+omf install spacefish 
+
+# Configure neovim
+cp -r ~/repos/dotfiles/.config/nvim ~/.config/nvim/
+pip3 install neovim
