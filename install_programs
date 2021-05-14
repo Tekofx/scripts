@@ -38,10 +38,6 @@ echo "Make fish default"
 echo
 chsh -s `which fish`
 
-echo
-echo "Install fish plugins"
-echo 
-curl -L https://get.oh-my.fish | fish &
 
 echo
 echo "Clean apt"
@@ -51,6 +47,10 @@ sudo apt autoremove
 echo
 echo "########## Rebooting system ##########"
 echo "After reboot run configure_programs"
-sleep 5s
-reboot
+sudo ( sleep 5 ; reboot ) & 
 
+
+echo
+echo "Install fish plugins"
+echo 
+curl -L https://get.oh-my.fish | fish &
