@@ -48,7 +48,7 @@ echo
 echo "########## Rebooting system in 15 s ##########"
 echo "After reboot run configure_programs"
 sleep 5 
-( sleep 5 ; reboot ) & 
+( sleep 15 ; reboot ) & 
 
 echo
 echo "Install fish plugins"
