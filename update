@@ -4,16 +4,19 @@ echo
 sudo apt update && sudo apt upgrade -y
 
 echo
+echo
 echo "Update npm"
 echo 
 sudo npm update -g
 sudo npm audit fix
 
 echo
+echo
 echo "Update snap"
 echo 
 sudo snap refresh
 
+echo
 echo
 echo "Update navi"
 echo 
