@@ -2,7 +2,7 @@
 echo "Update apt packages"
 echo 
 sudo apt update && sudo apt upgrade -y
-
+sudo apt autoremove
 echo
 echo
 echo "Update npm"
