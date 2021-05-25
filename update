@@ -2,8 +2,8 @@
 echo "Update apt packages"
 echo 
 sudo apt update && sudo apt upgrade -y
-sudo apt autoremove
-echo
+sudo apt autoremove -y
+
 echo
 echo "Update npm"
 echo 
@@ -11,14 +11,13 @@ sudo npm update -g
 sudo npm audit fix
 
 echo
-echo
 echo "Update snap"
 echo 
 sudo snap refresh
 
 echo
-echo
 echo "Update navi"
 echo 
+rm -dfr ~/.local/share/navi/cheats/
 navi repo add https://github.com/Tekofx/navi-cheats.git
 
