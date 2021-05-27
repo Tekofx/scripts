@@ -18,6 +18,6 @@ sudo snap refresh
 echo
 echo "Update navi"
 echo 
-rm -dfr ~/.local/share/navi/cheats/
+rm -dfr ~/.local/share/navi/cheats/Tekofx__navi-cheats
 navi repo add https://github.com/Tekofx/navi-cheats.git
 
