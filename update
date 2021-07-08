@@ -4,8 +4,13 @@ echo
 sudo apt update && sudo apt upgrade -y
 sudo apt autoremove -y
 
+echo 
+echo "Update node"
+echo 
+sudo n stable
+
 echo
-echo "Update npm"
+echo "Update npm packages"
 echo 
 sudo npm update -g
 sudo npm audit fix
