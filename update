@@ -18,6 +18,7 @@ sudo npm audit fix
 echo
 echo "Update snap"
 echo 
+sudo snap refresh core
 sudo snap refresh
 
 echo
