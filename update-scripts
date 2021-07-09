@@ -3,5 +3,5 @@
 cd ~/repos/scripts/
 git pull
 cp ~/repos/scripts/scripts/* ~/bin 
-cp ~/repos/scripts/update_scripts ~/bin 
+cp ~/repos/scripts/update-scripts ~/bin 
 echo "Updated and copied all scripts"
