@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd ~/repos/scripts/
+git pull
+cp ~/repos/scripts/scripts/* ~/bin 
+cp ~/repos/scripts/update_scripts ~/bin 
