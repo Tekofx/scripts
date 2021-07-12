@@ -13,6 +13,7 @@ echo
 echo "Update npm packages"
 echo 
 sudo npm update -g
+sudo npm install -g npm@latest
 sudo npm audit fix
 
 echo
